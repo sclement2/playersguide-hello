@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Formats.Asn1;
 using System.Runtime.CompilerServices;
 
 Console.WriteLine("What kind of thing are we talking about?"); 
@@ -18,4 +19,27 @@ static string CapitalizeFirstLetter(string source) {
     char[] letters = source.ToCharArray(); // convert to char array of the string
     letters[0] = char.ToUpper(letters[0]); // capitalize first char
     return new string(letters) + " "; // return the array made of the new char array
+}
+
+static void VariableTypes() {
+    float floatVariable;
+    double doubleVariable;
+    decimal decimalVariable;
+
+    int intVariable;
+    uint uintVariable;
+    short shortVariable;
+    ushort ushortVariable;
+    long longVariable;
+    ulong ulongVariable;
+    byte byteVariable;
+    sbyte sbyteVariable;
+
+    string stringVariable;
+    char charVariable;
+
+    bool boolVariable;
+    
+
+
 }
